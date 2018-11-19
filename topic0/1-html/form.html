@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="name=value,name=value">
+        <title>Formulario de datos</title>
+<style>
+body{
+    background-color:lightblue;
+}
+    div,button{
+        color:black;
+        font-size: 20px;
+        margin: 25px 60px 25px 60px;
+        font-family: helvetica;
+        }
+</style>
+    </head>
+    <body>
+        <form>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="nombre" placeholder="Nombre...">
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input id="apellido" type="text" name="apellido" placeholder="Apellido...">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="text" name="email" placeholder="Ingresar Email...">
+        </div>
+        <div>
+            <label for="Deporte">Deporte favorito<br/></label>
+            <select id="Deporte" name="Deporte" required>
+                <option value="" disabled selected>Seleccione..</option>
+                <option value="futbol">Futbol</option>
+                <option value="tenis">Tenis</option>
+                <option value="Voleibol">Voleibol</option>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="Comentario">Dejanos un comentario<br/></label>
+            <textarea id="Comentario" name="Comentario" rows="4" cols="25"></textarea>
+        </div>
+    <button type="submit" name="button">Enviar</button>
+    <button type="reset" name="button">Borrar</button>
+        </form>
+    </body>
+</html>
